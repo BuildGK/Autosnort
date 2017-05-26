@@ -382,7 +382,7 @@ cd pulledpork/etc
 #Create a copy of the original conf file (in case the user needs it), ask the user for an oink code, then fill out a really stripped down pulledpork.conf file with only the lines needed to run the perl script
 cp pulledpork.conf pulledpork.conf.orig
 
-echo "rule_url=https://www.snort.org/reg-rules/|snortrules-snapshot.tar.gz|$o_code" > pulledpork.tmp
+echo "rule_url=https://www.snort.org/downloads/community/|community-rules.tar.gz|Community" > pulledpork.tmp
 echo "rule_url=https://www.snort.org/reg-rules/|opensource.gz|$o_code" >> pulledpork.tmp
 echo "rule_url=https://snort.org/downloads/community/|community-rules.tar.gz|Community" >> pulledpork.tmp
 echo "rule_url=http://talosintel.com/feeds/ip-filter.blf|IPBLACKLIST|open" >> pulledpork.tmp
